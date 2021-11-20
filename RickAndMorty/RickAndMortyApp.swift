@@ -3,7 +3,11 @@
 //  RickAndMorty
 //
 //  Created by Ron Woodbury on 11/18/21.
-//
+
+// ********************************************
+// Initial swift file called by the compiler,
+// which subsequently calls RMHome.
+// ********************************************
 
 import SwiftUI
 
@@ -11,7 +15,7 @@ import SwiftUI
 struct RickAndMortyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RMHome()
         }
     }
 }
