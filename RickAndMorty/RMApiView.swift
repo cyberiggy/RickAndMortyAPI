@@ -95,3 +95,6 @@ struct MortysApi_Previews: PreviewProvider {
 }
 
 
+
+
+// Backup copy of JSON file stored at https://api.jsonbin.io/b/619ad1740ddbee6f8b0fe0fd

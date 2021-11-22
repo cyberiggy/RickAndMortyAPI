@@ -5,15 +5,33 @@
 //  Created by Ron Woodbury on 11/19/21.
 
 // ********************************************
-// I just wanted a 4th tab. Nothing fancy here.
+// A little fun with a button and and alert.
+//
+// Note the @State and Binding ($showingAlert)
+// These are required to make changes to 
+// variables in a struct.
 // ********************************************
 
 import SwiftUI
 
+
+
+
 struct HelpView: View {
+    
+    @State private var showingAlert = false
+
     var body: some View {
-        Text("Help! Please.")
-            .foregroundColor(.teal)
+        Button("Press for help") {
+            showingAlert = true
+        }
+        .buttonStyle(.borderedProminent)
+        
+        .alert("Sorry. I'm clueless.", isPresented: $showingAlert) {
+            Button("OK") {
+                print("Button Pressed")
+            }
+        }
     }
 }
 
@@ -22,3 +40,5 @@ struct HelpPlease_Previews: PreviewProvider {
         HelpView()
     }
 }
+
+

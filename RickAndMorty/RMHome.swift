@@ -58,8 +58,17 @@ struct RMHome: View {
                     Image(systemName: "questionmark.circle.fill")
                 }
             .tag(3)
-        }.accentColor(.teal)
+    
         
+        
+                TextInputView()
+                .tabItem{
+                    Image(systemName: "doc.text.fill")
+                }
+            .tag(4)
+        }.accentColor(.teal)
+    
+    
     }
  
 }
